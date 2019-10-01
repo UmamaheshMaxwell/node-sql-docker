@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: simple-api
+  labels:
+    name: simple-api
+spec:
+  containers:
+    - name: simple-api
+      image: 30160225/node-sql-app:latest
+      ports:
+        - containerPort: 8080
